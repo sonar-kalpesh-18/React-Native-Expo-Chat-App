@@ -2,7 +2,19 @@ import {Stack} from "expo-router";
 export default function HomeLayout() {
   return (
     <Stack>
-        <Stack.Screen name='(tabs)' options={{headerShown: false}} />
+        <Stack.Screen 
+        name='(tabs)' 
+        options={{headerShown: false, title: 'Home'}} 
+        />
+        <Stack.Screen 
+        name='channel/[id]' 
+        options={{
+          // headerShown: true, 
+          title: 'Channel',
+          headerBackButtonDisplayMode: 'minimal',
+          headerLargeTitle: true
+        }} 
+        />
     </Stack>
     );
 }
