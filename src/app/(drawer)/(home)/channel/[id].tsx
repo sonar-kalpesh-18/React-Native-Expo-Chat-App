@@ -4,7 +4,7 @@ import  Channels   from '@/app/data/channels';
 import { Stack } from 'expo-router';
 
 export default function ChannelScreen() {  
-    const { id } = useLocalSearchParams(); // to get the channel id from the url
+    const { id } = useLocalSearchParams<{ id: string }>(); // to get the channel id from the url
     const channel = Channels.find((c) => c.id === id); // find the channel with the matching id
 
     if (!channel) {
