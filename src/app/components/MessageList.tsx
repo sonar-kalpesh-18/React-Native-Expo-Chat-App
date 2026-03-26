@@ -13,6 +13,8 @@ export default function MessageList() {
         isOwnMessage={item.user.id === myId} />
     )}
     contentInsetAdjustmentBehavior="automatic"
+    inverted
+    showsVerticalScrollIndicator={false}
  />
 );
 }
