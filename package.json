@@ -9,12 +9,14 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@clerk/clerk-expo": "^2.19.31",
     "@react-navigation/drawer": "^7.7.2",
     "babel-preset-expo": "^55.0.10",
     "expo": "~55.0.5",
     "expo-constants": "~55.0.7",
     "expo-linking": "~55.0.8",
     "expo-router": "~55.0.7",
+    "expo-secure-store": "~55.0.9",
     "expo-status-bar": "~55.0.4",
     "nativewind": "^4.2.2",
     "prettier-plugin-tailwindcss": "^0.5.14",

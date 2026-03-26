@@ -2,6 +2,7 @@ import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { NativeTabs } from 'expo-router/unstable-native-tabs';
 
+
 export default function TabsLayout() {
   return (
   <Tabs >
