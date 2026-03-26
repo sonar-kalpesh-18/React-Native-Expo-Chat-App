@@ -8,7 +8,7 @@ export default function ChatLayout() {
         options={({navigation}) => ({
             title: 'Chats',
             headerLargeTitle: true,
-            headerTransparent: true,
+            headerTransparent: false,
             headerLeft: () => (
                 <Ionicons 
                 onPress ={()=>{navigation.openDrawer()}}

@@ -1,33 +1,34 @@
 import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { NativeTabs } from 'expo-router/unstable-native-tabs';
+import { View } from 'react-native/Libraries/Components/View/View';
 
 
 export default function TabsLayout() {
   return (
   <Tabs >
-    <Tabs.Screen name="chats" 
-    options={{ 
+    <Tabs.Screen name="chats"
+    options={{
       headerShown: false,
-      title: 'Chats', 
-      tabBarIcon:({color, size}) => 
+      title: 'Chats',
+      tabBarIcon:({color, size}) =>
       <Ionicons name="chatbox" size={size} color={color} /> }} />
 
     <Tabs.Screen name="settings"
-     options={{ 
+     options={{
       headerShown: false,
       title: 'Settings',
-       tabBarIcon:({color, size}) => 
+       tabBarIcon:({color, size}) =>
       <Ionicons name="settings-sharp" size={size} color={color} /> }} />
 
       <Tabs.Screen name="search"
-     options={{ 
+     options={{
       headerShown: false,
       title: 'Search',
-       tabBarIcon:({color, size}) => 
+       tabBarIcon:({color, size}) =>
       <Ionicons name="search" size={size} color={color} /> }} />
   </Tabs>
 
-  
+
   );
 }

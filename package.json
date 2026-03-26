@@ -12,6 +12,7 @@
     "@clerk/clerk-expo": "^2.19.31",
     "@react-navigation/drawer": "^7.7.2",
     "babel-preset-expo": "^55.0.10",
+    "date-fns": "^4.1.0",
     "expo": "~55.0.5",
     "expo-constants": "~55.0.7",
     "expo-linking": "~55.0.8",

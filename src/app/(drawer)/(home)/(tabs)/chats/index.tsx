@@ -1,11 +1,17 @@
 import { Link } from 'expo-router'; 
-import '../../../../../../global.css'
-import { View, Text } from 'react-native';
+// import '../../../../../../global.css'
+import { View, Text, FlatList } from 'react-native';
+import channels from '../../../../data/channels';
+import ChannelListItem from '@/app/components/ChannelListItem';
 
-export default function ChatsScreen() {
+export default function ChannelListScreen() {
   return (
-    <View className="flex-1 items-center justify-center">
-      <Text className="text-2xl font-bold">Chats</Text>
-    </View>
+      <FlatList 
+      data = {channels}
+      className='bg-white text-lg'
+      renderItem = {({ item }) => <ChannelListItem channel={item} />}
+      showsHorizontalScrollIndicator={false}
+      contentInsetAdjustmentBehavior='automatic'
+      />
   );
 }
