@@ -15,6 +15,15 @@ export default function HomeLayout() {
           headerLargeTitle: true
         }} 
         />
+          <Stack.Screen
+        name='new/chat'
+        options={{
+          title: 'New Chat',
+          presentation: 'transparentModal', // ✅ key fix
+          animation: 'fade_from_bottom',
+          headerShown: false
+        }}
+        />
     </Stack>
     );
 }
