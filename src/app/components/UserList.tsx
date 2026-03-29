@@ -11,6 +11,7 @@ type UserListProps = {
 export default function UserList({onPress}: UserListProps) {
     return (
         <FlatList
+            showsVerticalScrollIndicator={false}
             data={users}
             renderItem={({item}) => <UserListItem user={item} onPress={onPress} />}     
         />
