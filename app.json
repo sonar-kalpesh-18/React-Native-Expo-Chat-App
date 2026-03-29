@@ -40,7 +40,16 @@
     },
     "plugins": [
       "expo-router",
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+      "expo-image-picker",
+      {
+        "photosPermission": "Allow access to photos.",
+        "cameraPermission": "Allow access to camera.",
+        "microphonePermission": "Allow access to microphone.",
+        
+      }
+    ]
     ]
   }
 }
